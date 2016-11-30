@@ -53,3 +53,37 @@
   }
 }
 
+.text-center {
+  margin-top: -70px; 
+}
+
+h2 a{
+  font-size: 0.5em;
+  line-height:20%;
+}
+
+@media(min-width: 768px)
+{
+  h2 a{
+  font-size: 0.8em;
+}
+}
+
+#c{
+     position:absolute;
+     left: 0px;
+     top: 0px;
+  }
+  #parent{
+    position:relative;
+  }
+
+  @font-face {
+    font-family: 'binary';
+    src: url('fonts/binary.ttf');
+    }
+
+    @font-face {
+    font-family: 'sneak';
+    src: url('fonts/sneak.ttf');
+    }
