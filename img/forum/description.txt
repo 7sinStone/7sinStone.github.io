@@ -1,0 +1,78 @@
+Elissa est un forum de discussions permettant aux femmes de poser des
+questions afin d’avoir des clarifications ou bien d’ouvrir des débats en toute sécurité et anonymat.
+Le forum est composé de deux parties:
+— La première partie est le forum grâce auquel les internautes peuvent s’inscrire, créer des
+discussions et y répondre à l’aide d’un système de commentaires.
+— La deuxième partie est un espace d’administration du contenu du forum. Il permet à l’administrateur de gérer les utilisateurs inscrits, les discussions, les réponses et les catégories.
+
+Les fonctionnalités du forum :
+L’internaute ne peut bénéficier des fonctionnalités du notre forum qu’après avoir créé un
+compte et s’authentifier avec. Et pour pouvoir s’authentifier, l’internaute doit tout d’abord activer son compte via un mail de confirmation.
+Une fois authentifié, il peut alors :
+— Créer une discussion.
+— Répondre à sa propre discussion ou bien à une créée par un autre internaute.
+— Modifier ou bien supprimer ses propres discussions.
+— Modifier ses réponses.
+— Aimer une discussion ou bien une réponse.
+— Alerter l’administrateur si quelqu’un n’a pas respecté la charte d’utilisation en utilisant des
+insultes, abus, contenu sexuel...
+— Effectuer une recherche sur les discussions selon des mots clés.
+— Consulter ses informations et modifier sa photo.
+— Recevoir des notifications si quelqu’un a répondu à une discussion qu’il a créée ou bien à une discussion sur laquelle il a répondu auparavant.
+Il faut aussi que n’importe quel visiteur de notre forum soit capable de consulter les règles d’utilisation et les foires aux questions (FAQ).
+Les fonctionnalités de l’espace d’administration :
+A travers un espace d’administration du forum, l’administrateur peut:
+— Gérer les différentes catégories du forum ; il peut ainsi ajouter une nouvelle, modifier ou
+supprimer une catégorie existante. Il peut aussi consulter la liste des catégories.
+— Consulter le nombre des discussions qui ont été créée au cours du mois courant ou bien
+l’année courante par catégorie.
+— Consulter la liste des discussions par catégorie.
+— Gérer les discussions ; il peut consulter la liste de toutes les discussions et supprimer une ou plusieurs discussions.
+— Consulter des données statistiques sur le nombre total des discussions, le nombre des discussions actives au cours du mois courant ou le nombre des discussions créées par mois ou par année.
+— Consulter les informations d’une discussion.
+— Supprimer des réponses.
+— Gérer les internautes inscrits dans le forum ; Il peut consulter la liste de tous les internautes. Il peut également supprimer ou bannir un ou plusieurs internautes.
+
+— Consulter des données statistiques sur le nombre total des internautes qui utilisent le forum, le nombre des internautes inscrits pendant le mois courant ou bien le nombre des internautes inscrits par mois ou par année.
+— Consulter le profil d’un internaute en accédant à ses informations et ses activités récentes..
+— Recevoir des notifications d’alertes des utilisateurs d’une règle d’utilisation non respecté par un autre utilisateur.
+
+
+
+
+
+Elissa is a discussion forum for women to ask questions in order to clarify or open debates safely and anonymously.
+
+The Elissa web site consists of two parts:
+- The first part is the forum where users can register, create discussions and respond to them using a feedback system.
+- The second part is a space for administering the content of the forum. It allows the administrator to manage registered users, discussions, answers and categories.
+
+Forum features:
+The user can benefit from the functionalities of our forum only after having created an account and authenticate with. And to be able to authenticate, the user must
+first activate his account via a confirmation mail.
+Once authenticated, it can then:
+- Create a discussion.
+- Reply to one's own discussion or to another created by another user.
+- Modify or delete his own discussions.
+- Modify his answers.
+- Like a discussion or an answer.
+- Alert the administrator if someone has not complied with the charter by using insults, abuse, sexual content ...
+- Search the discussions by keywords.
+- View his information and edit his photo.
+- Receive notifications if someone has responded to a discussion he has created or to a discussion he has answered before.
+It is also necessary that any visitor of our forum be able to consult the rules of use and the FAQs.
+
+The functionality of the administration panel:
+Through a forum administration dashbord, the administrator can:
+- Manage the different categories of the forum; He can add a new categorie, edit or
+Delete an existing one. It can also consult the list of categories.
+- View the number of discussions that were created during the current month or the current year by category.
+- View the discussion list by category.
+- Manage the discussions; He can view the list of all discussions and delete one or more discussions.
+- View statistical data on the total number of discussions, the number of active discussions in the current month, or the number of discussions created per month or year.
+- View the informations of a discussion.
+- Delete answers if they contain insults, abuse, sexual content ...
+- Manage the users registered in the forum; He can consult the list of all registred users. It can also delete or ban one or more users.
+- View statistical data on the total number of users using the forum, the number of users registered in the current month, or the number of users registered per month or per year.
+- View the profile of a user and access to his informations and his recent activities.
+- Receive alerts from users of a usage rule that is not respected by another user.

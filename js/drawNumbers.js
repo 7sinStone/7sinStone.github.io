@@ -1,13 +1,11 @@
 $(document).ready(function() {
 
-	var c = document.getElementById("c");
+var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 c.width=window.innerWidth;
 c.height=document.getElementById("parentCanvas").offsetHeight;
-//chinese characters - taken from the unicode charset
 var drawingString = "01";
-//converting the string into an array of single characters
-//chinese = ["c++","java","python","php","jquery","mysql","c","c#"];
+
 stringsToDraw = drawingString.split("");
 
 var font_size = 15;

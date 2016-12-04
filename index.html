@@ -9,70 +9,48 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Houssein Mnaouar's portfolio</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-        <link href="css/custom.css" rel="stylesheet">
 
+    <!-- Theme CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+
+    <script>
+      (function(){
+
+        var config = {
+          viewFactor : 0.15,
+          duration   : 800,
+          distance   : "0px"
+        };
+
+        window.sr = ScrollReveal( config );
+      })();
+
+    </script>
 </head>
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Houssein Mnaouar</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
     <header id="parentCanvas">
-        <canvas id="c"></canvas>
+        <canvas id="canvas"></canvas>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/houssein.jpg" height="180px" width="180px" alt="">
+                    <img class="img-responsive img-circle anim" src="img/houssein.jpg" height="180px" width="180px" alt="">
                     <div class="intro-text">
                         <span class="name">Houssein Mnaouar (7sinStone)</span>
                         <hr class="star-light">
@@ -83,8 +61,7 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" style="background-color: #f1f1f1">
        
         <div id="content">
             <div class="container">
@@ -93,12 +70,12 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-9" id="blog-listing">
-                        <div class="post">
-                            <h2><a href="post.html">Memory game</a> <p class="date-comments">
+                        <div class="post left">
+                            <h2><a href="memory_game.html">Memory game</a> <p class="date-comments">
                                 <i class="fa fa-calendar-o"></i> October 2016 </a></p></h2>
                             
                             <div class="image">
-                                    <img src="img/forum/index.png" class="img-responsive" alt="Example blog post alt">
+                                    <img src="img/memory_game/slide1.png" width="600px"  class="img-responsive" alt="the memory game">
                             </div>
                         </div> 
                     </div>
@@ -106,8 +83,8 @@
 
                 <div class="row">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <div class="post">
-                            <h2><a href="post.html">Elissa forum</a> <p class="date-comments">
+                        <div class="post right">
+                            <h2><a href="forum.html">Elissa forum</a> <p class="date-comments">
                                 <i class="fa fa-calendar-o"></i> June 2016 - August 2016</a></p></h2>
                             
                             <div class="image">
@@ -119,7 +96,7 @@
 
                 <div class="row">
                     <div class="col-sm-9" id="blog-listing">
-                        <div class="post">
+                        <div class="post left">
                             <h2><a href="post.html">Traffic generator and performance measurement
 module</a> <p class="date-comments">
                                 <i class="fa fa-calendar-o"></i> Febrary 2016 - May 2016</a></p></h2>
@@ -133,8 +110,8 @@ module</a> <p class="date-comments">
 
                 <div class="row">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <div class="post">
-                            <h2><a href="post.html">Mobile application “Didon”</a> <p class="date-comments">
+                        <div class="post right">
+                            <h2><a href="didon.html">Mobile application “Didon”</a> <p class="date-comments">
                                 <i class="fa fa-calendar-o"></i> August 2015</a></p></h2>
                             
                             <div class="image">
@@ -212,22 +189,29 @@ easily adapt myself into a team.</p>
    
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
     <script src="js/drawNumbers.js"></script>
+
+
+    <script >
+        $(document).ready(function(){
+
+
+                  sr.reveal( ".anim", { reset: true, scale:1.2 } );
+                  sr.reveal(".left",{reset : true, origin: 'left', distance: '200px'});
+                sr.reveal(".right",{reset : true, origin: 'right', distance: '200px'});
+
+           
+        });
+    </script>
 
 </body>
 
