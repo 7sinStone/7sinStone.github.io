@@ -26,8 +26,6 @@
 
         <!-- Theme CSS -->
     <link href="css/portfolio.css" rel="stylesheet">
-    <link href="css/project.css" rel="stylesheet">
-
 
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
@@ -47,52 +45,54 @@
     </script>
     <style>
 
-        #slider {
-            width: 300px;
-            height: 350px;
-        }
-
-        .slider .slides img {
-            width: 300px;
-            height: 350px;
-        }
-
+       
     </style>
 
 </head>
 
 <body id="page-top" class="index">
 
-<a class="btn btn-back" href="index.html"> <span class="fa fa-arrow-left" id="arrow"></span></a>
-
-
     <section id="portfolio" style="background-color: #f1f1f1">
         
     <div class="container">
 
         <div class="row">
-            <h2 class="">Mobile application “Didon”</h2>
+            <h2 class="">Traffic generation and performance measurement</h2>
         </div>
 
         <div class="row" style="margin-top:50px;margin-bottom: 150px; ">
-            <div class="col-sm-5">
+            <div class="col-sm-7">
                 <div id="slider" class="flexslider">
                   <ul class="slides">
                   </ul>
                 </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-5">
                 <h3><i class="fa fa-list-alt"></i> Description</h3>
-            <p>Didon is an android application that allows people to register for the contest launched by didon association.<br/>
-The application interacts with a REST API created using a simple PHP framework called SLIM.<br/><br/>
-<span style="font-weight: bold;">The application's features</span><br/>
-With this application, the user can:<br/>
-<i class="fa fa-check-square-o"></i>Register for the contest.<br/>
-<i class="fa fa-check-square-o"></i>See his informations.<br/>
-<i class="fa fa-check-square-o"></i>Change his informations.<br/>
-<i class="fa fa-check-square-o"></i>Consult the contest description.<br/>
-<i class="fa fa-check-square-o"></i>Consult the description of the association "DIDON".<br/>
-<i class="fa fa-check-square-o"></i>Consult the contest rules.<br/>
+            <p>
+            It is a module integrated into the "Shinken" monitoring tool that allows the generation of network traffic and performance measurement based on open source tools: IPERF3 and D-ITG.<br/>
+For this the overall architecture of the project must contain:<br/>
+- A module integrated in Shiken which must be installed side supervisor machine. It orchestrates the whole process of the performance test. <br/>Through it, we define the machines that will generate traffic and the machines that will be the receivers, and for each flow to generate, we define the different parameters:<br/>
+- protocol: specifies the protocol used by the sending machine when generating
+traffic. The protocol can be either TCP or UDP. In the case of TCP, traffic flows are
+Unicast, whereas for UDP, the administrator must be able to choose between multicast and unicast,<br/>
+- packet size: the size of the packets can be fixed, as it can follow a model
+Specific stochastic,<br/>
+Inter-frame time: the time delay between the arrival of two successive frames may,<br/>
+As in the case of packet size, be either constant or defined by a stochastic model,<br/>
+- sampling interval: delay between two successive measurements of a metric,<br/>
+- transmission time: duration of traffic generation,<br/>
+- transmission time: duration of traffic generation,<br/>
+- delay before the start of the traffic generation: allows to calculate the date of the beginning of the generation of a given stream.<br/>
+- A daemon that can act as a generator or a traffic receiver. This daemon must be installed on the supervised machine side.<br/>
+ 
+
+Features:<br/>
+The extensions to be developed must provide the administrator with the following features:<br/>
+
+- Configuration of the flows to be generated<br/>
+- Traffic Generation<br/>
+- Graphical representation of the results obtained by representing each metric represented separately.<br/>
 
 </p>
 
@@ -113,7 +113,7 @@ With this application, the user can:<br/>
     </section>
     
     <!-- Footer -->
-    <footer id="contact" class="text-center anim-top">
+    <footer id="contact" class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -164,8 +164,8 @@ With this application, the user can:<br/>
 
     <script type="text/javascript">
         $(document).ready(function () {
-            for (var i = 1; i <= 9; i++) {
-                $(".slides").append("<li><img src=\"img/didon/slide"+i+".jpg\"/></li>");
+            for (var i = 1; i <= 7; i++) {
+                $(".slides").append("<li><img src=\"img/tgpm/slide"+i+".png\"/></li>");
             }
 
             sr.reveal( "#definition", { reset: true, scale:1.2 } );
@@ -201,8 +201,6 @@ With this application, the user can:<br/>
                   var slide = $("#slider").data("flexslider").currentSlide;
                   $("#definition").text(map.get(slide));
               });
-
-              sr.reveal(".anim-top",{reset:true, origin: 'top', distance: '100px'});
         });
     </script>
 

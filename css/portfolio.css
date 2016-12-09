@@ -8,14 +8,28 @@ p {
 p.small {
   font-size: 16px;
 }
-a,
+
+
+a {
+  color: #555555;
+  font-size: 1.5em;
+}
+
 a:hover,
 a:focus,
 a:active,
 a.active {
   color: #8CBAFA;
   outline: none;
+  text-decoration: none;
 }
+
+.date{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+a,
 h1,
 h2,
 h3,
@@ -85,6 +99,9 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+
+
+
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
@@ -96,6 +113,7 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.75em;
   }
+
 }
 
 section {
@@ -109,6 +127,7 @@ section.success {
   background: #8CBAFA;
   color: white;
 }
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
@@ -185,11 +204,14 @@ footer .footer-below {
 
 .img-circle {
   border-radius: 50%;
-  height: 50 px;
-  width: 50 px;
+  height: 100%;
+  width: 100%;
 }
 
-
+.container-image{
+  width: 180px;
+  height: 180px;
+}
 
 .post {
   margin-bottom: 60px;
@@ -204,28 +226,7 @@ footer .footer-below {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
 }
-.post h2 a,
-.post h4 a{
-  color: #555555;
-}
-.post h2 a:hover,
-.post h4 a:hover {
-  color: #8CBAFA;
-}
-.post .author-category{
-  color: #999999;
-  font-weight: 300;
-}
-.post .date-comments a{
-  color: #999999;
-  margin-right: 20px;
-}
-.post .date-comments a:hover {
-  color: #4fbfa8;
-}
-.post .intro {
-  text-align: left;
-}
+
 .post .image{
   margin-bottom: 10px;
   overflow: hidden;
@@ -235,7 +236,7 @@ footer .footer-below {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  border : solid 1px #000;
+  border : solid 1px #BFBFBF;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
@@ -250,51 +251,57 @@ footer .footer-below {
   margin-top: -70px; 
 }
 
-h2 a{
-  font-size: 0.5em;
-  line-height:20%;
-}
-
-@media(min-width: 768px)
-{
-  h2 a{
-  font-size: 0.8em;
-}
-}
-
 #canvas{
      position:absolute;
      left: 0px;
      top: 0px;
   }
-  #parentCanvas{
+
+#parentCanvas{
     position:relative;
+}
+
+
+/* small desktop */
+@media all and (max-width: 1200px) {
+.anim, .left, .right, #definition {
+      visibility: hidden;
+    }
+
+}
+
+
+/* mobile phone */
+@media all and (max-width: 768px) {
+
+  .container-image{
+    height: 120px;
+  width: 120px;
+  }
+  .projects {
+    font-size: 2em;
+    margin-top: 5px;
   }
 
-  @font-face {
+  h2 {
+    font-size:1.8em;
+    margin-top: 5px;
+  }
+  p{
+    font-size:14px;
+  }
+  .date{
+    font-size: 16px;
+  }
+}
+
+@font-face {
     font-family: 'binary';
     src: url('fonts/binary.ttf');
     }
 
-    @font-face {
-    font-family: 'sneak';
-    src: url('fonts/sneak.ttf');
-    }
-
-.capture_detail {
-  background: #8CBAFA;
-  color: #fff;
-  text-align: center;
-  border: solid 1px #e6e6e6;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+@font-face {
+  font-family: 'sneak';
+  src: url('fonts/sneak.ttf');
 }
 
-
-.anim, .left, .right, #definition {
-visibility: hidden;
-}

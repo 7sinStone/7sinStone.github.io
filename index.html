@@ -31,13 +31,15 @@
     <script>
       (function(){
 
-        var config = {
+           var config = {
           viewFactor : 0.15,
           duration   : 800,
-          distance   : "0px"
-        };
+          distance   : "0px",
+          mobile : false
+          };
 
-        window.sr = ScrollReveal( config );
+          window.sr = ScrollReveal( config ); 
+        
       })();
 
     </script>
@@ -50,7 +52,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle anim" src="img/houssein.jpg" height="180px" width="180px" alt="">
+                    <div class="container-image center-block">
+                    <img class="img-responsive img-circle anim" src="img/houssein.jpg"  alt="">
+                    </div>
                     <div class="intro-text">
                         <span class="name">Houssein Mnaouar (7sinStone)</span>
                         <hr class="star-light">
@@ -66,13 +70,13 @@
         <div id="content">
             <div class="container">
                 <div class="row">
-                   <h1 class="text-center">My projects</h1>
+                   <h2 class="text-center projects">My projects</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-9" id="blog-listing">
                         <div class="post left">
-                            <h2><a href="memory_game.html">Memory game</a> <p class="date-comments">
-                                <i class="fa fa-calendar-o"></i> October 2016 </a></p></h2>
+                            <a href="memory_game.html">Memory game</a> <h2 class="date">
+                                <i class="fa fa-calendar-o"></i> October 2016</h2>
                             
                             <div class="image">
                                     <img src="img/memory_game/slide1.png" width="600px"  class="img-responsive" alt="the memory game">
@@ -84,11 +88,11 @@
                 <div class="row">
                     <div class="col-sm-9 col-sm-offset-3">
                         <div class="post right">
-                            <h2><a href="forum.html">Elissa forum</a> <p class="date-comments">
-                                <i class="fa fa-calendar-o"></i> June 2016 - August 2016</a></p></h2>
+                            <a href="forum.html">Elissa forum</a> <h2 class="date">
+                                <i class="fa fa-calendar-o"></i> June 2016 - August 2016</h2>
                             
                             <div class="image">
-                                    <img src="img/forum/slide1.png" class="img-responsive" alt="Example blog post alt">
+                                    <img src="img/forum/slide1.png" class="img-responsive" alt="Elissa forum">
                             </div>
                         </div> 
                     </div>
@@ -97,12 +101,13 @@
                 <div class="row">
                     <div class="col-sm-9" id="blog-listing">
                         <div class="post left">
-                            <h2><a href="post.html">Traffic generator and performance measurement
-module</a> <p class="date-comments">
-                                <i class="fa fa-calendar-o"></i> Febrary 2016 - May 2016</a></p></h2>
+                            <a href="tgpm.html">Traffic Generator and Performance Measurement
+module</a> <h2 class="date">
+                                <i class="fa fa-calendar-o"></i> Febrary 2016 - May 2016</h2>
                             
                             <div class="image">
-                                    <img src="img/pcd/index.png" class="img-responsive" alt="Example blog post alt">
+                                    <img src="img/tgpm/slide1.png" class="img-responsive" alt="Traffic Generator and Performance Measurement
+module">
                             </div>
                         </div> 
                     </div>
@@ -111,8 +116,8 @@ module</a> <p class="date-comments">
                 <div class="row">
                     <div class="col-sm-9 col-sm-offset-3">
                         <div class="post right">
-                            <h2><a href="didon.html">Mobile application “Didon”</a> <p class="date-comments">
-                                <i class="fa fa-calendar-o"></i> August 2015</a></p></h2>
+                            <a href="didon.html">Mobile application “Didon”</a> <h2 class="date">
+                                <i class="fa fa-calendar-o"></i> August 2015</h2>
                             
                             <div class="image">
                                     <img src="img/didon/show.png" class="img-responsive" alt="Didon application logo" >
@@ -132,25 +137,21 @@ module</a> <p class="date-comments">
     <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center anim-top">
                     <h2>About me</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-4">
-                    <p>Computer engineering student belonging to the
-National School of Computer Sciences (ENSI) .I am
-specialized in network and distributed systems
-studies. I am a very motivated person and can
-easily adapt myself into a team.</p>
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p class="text-justify">Engineering student at the National School of Computer Science (ENSI), specializing in networks and distributed systems. I am a very motivated and ambitious person, passionate about development and problem solving. I am someone who gives importance to teamwork and able to integrate easily into a team.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="text-center">
+    <footer id="contact" class="text-center anim-top">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -204,11 +205,11 @@ easily adapt myself into a team.</p>
     <script >
         $(document).ready(function(){
 
-
-                  sr.reveal( ".anim", { reset: true, scale:1.2 } );
-                  sr.reveal(".left",{reset : true, origin: 'left', distance: '200px'});
+                sr.reveal( ".anim", { reset: true, scale:1.2 } );
+                sr.reveal(".left",{reset : true, origin: 'left', distance: '200px'});
                 sr.reveal(".right",{reset : true, origin: 'right', distance: '200px'});
-
+                sr.reveal(".success",{reset:true,rotate: { x: 50, y: 70, z: 90 }});
+                sr.reveal(".anim-top",{reset : true, origin: 'top', distance: '200px', delay:200}); 
            
         });
     </script>

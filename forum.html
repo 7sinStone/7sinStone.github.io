@@ -26,6 +26,8 @@
 
         <!-- Theme CSS -->
     <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+
 
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
@@ -46,6 +48,10 @@
 </head>
 
 <body id="page-top" class="index">
+
+<a class="btn btn-back" href="index.html"> <span class="fa fa-arrow-left" id="arrow"></span></a>
+
+
 
     <section id="portfolio" style="background-color: #f1f1f1">
         
@@ -125,7 +131,7 @@ Delete an existing one. It can also consult the list of categories.<br/>
     </section>
     
     <!-- Footer -->
-    <footer id="contact" class="text-center">
+    <footer id="contact" class="text-center anim-top">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -228,6 +234,8 @@ Delete an existing one. It can also consult the list of categories.<br/>
                   var slide = $("#slider").data("flexslider").currentSlide;
                   $("#definition").text(map.get(slide));
               });
+
+              sr.reveal(".anim-top",{reset:true, origin: 'top', distance: '100px'});
         });
     </script>
 
