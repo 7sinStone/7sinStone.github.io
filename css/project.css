@@ -1,3 +1,8 @@
+a{
+  font-size: 1em;
+}
+
+
 .btn-back{
     width: 50px;
     height: 50px;
@@ -76,6 +81,29 @@ text-align: center;
 
 
 @media all and (max-width: 768px) {
+  h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h3{
+    font-size: 1.2em;
+    margin-left: 5px;
+  }
+  a{
+    font-size: 1em;
+  }
 
+  p{
+    padding: 10px;
+  }
+
+  .capture_detail_parent,.btn-back, #carousel {
+    display: none;
+  }
+
+  .capture_detail{
+    padding: 0px;
+  }
   
 }

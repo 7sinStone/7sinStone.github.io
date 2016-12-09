@@ -57,6 +57,25 @@
             height: 350px;
         }
 
+
+@media all and (max-width: 768px) {
+
+    #slider {
+            width: 200px;
+            height: 250px;
+            margin-left: 50px;
+        }
+
+        .slider .slides img {
+            width: 200px;
+            height: 250px;
+        }
+
+        .description{
+            margin-top: 150px;
+        }
+
+}
     </style>
 
 </head>
@@ -82,8 +101,8 @@
                 </div>
             </div>
             <div class="col-sm-7">
-                <h3><i class="fa fa-list-alt"></i> Description</h3>
-            <p>Didon is an android application that allows people to register for the contest launched by didon association.<br/>
+                <h3 class="description"><i class="fa fa-list-alt"></i> Description</h3>
+            <p class="text-justify">Didon is an android application that allows people to register for the contest launched by didon association.<br/>
 The application interacts with a REST API created using a simple PHP framework called SLIM.<br/><br/>
 <span style="font-weight: bold;">The application's features</span><br/>
 With this application, the user can:<br/>
@@ -96,7 +115,7 @@ With this application, the user can:<br/>
 
 </p>
 
-            <div class="row" style="margin-bottom: 50px; ">
+            <div class="row capture_detail_parent" style="margin-bottom: 50px; ">
             <div class="col-sm-4 col-sm-offset-4">
                 <div class="capture_detail">
                    <p id="definition">Index page</p> 
