@@ -22,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
         
-    <link href="../css/flexslider.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
 
         <!-- Theme CSS -->
-    <link href="../css/portfolio.css" rel="stylesheet">
-    <link href="../css/project.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
 
 
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
@@ -45,38 +45,6 @@
       })();
 
     </script>
-    <style>
-
-        #slider {
-            width: 300px;
-            height: 350px;
-        }
-
-        .slider .slides img {
-            width: 300px;
-            height: 350px;
-        }
-
-
-@media all and (max-width: 768px) {
-
-    #slider {
-            width: 200px;
-            height: 250px;
-            margin-left: 50px;
-        }
-
-        .slider .slides img {
-            width: 200px;
-            height: 250px;
-        }
-
-        .description{
-            margin-top: 150px;
-        }
-
-}
-    </style>
 
 </head>
 
@@ -85,40 +53,35 @@
 <a class="btn btn-back" href="index.html"> <span class="fa fa-arrow-left" id="arrow"></span></a>
 
 
+
     <section id="portfolio" style="background-color: #f1f1f1">
         
     <div class="container">
 
         <div class="row">
-            <h2 class="">Mobile application “Didon”</h2>
+            <h2 class="">Memory game</h2>
         </div>
 
         <div class="row" style="margin-top:50px;margin-bottom: 150px; ">
-            <div class="col-sm-5">
+            <div class="col-sm-7">
                 <div id="slider" class="flexslider">
                   <ul class="slides">
                   </ul>
                 </div>
             </div>
-            <div class="col-sm-7">
-                <h3 class="description"><i class="fa fa-list-alt"></i> Description</h3>
-            <p class="text-justify">Didon is an android application that allows people to register for the contest launched by didon association.<br/>
-The application interacts with a REST API created using a simple PHP framework called SLIM.<br/><br/>
-<span style="font-weight: bold;">The application's features</span><br/>
-With this application, the user can:<br/>
-<i class="fa fa-check-square-o"></i>Register for the contest.<br/>
-<i class="fa fa-check-square-o"></i>See his informations.<br/>
-<i class="fa fa-check-square-o"></i>Change his informations.<br/>
-<i class="fa fa-check-square-o"></i>Consult the contest description.<br/>
-<i class="fa fa-check-square-o"></i>Consult the description of the association "DIDON".<br/>
-<i class="fa fa-check-square-o"></i>Consult the contest rules.<br/>
+            <div class="col-sm-5">
+                <h3><i class="fa fa-list-alt"></i> Description</h3>
+            <p class="text-justify">It is a simple memory game designed with html5 and javascript library CreateJS.<br/>
+It is a game created for the association JCI (for "Jeune Chambre Internationale") of Cathage with a goal to make known the global goals for sustainable development.<br/>
+you can find a demo of the game in : <a href="https://7sinStone.github.io/memory_game">Demo</a><br/>
+The source code is distributed using <a href="https://github.com/7sinStone/memory_game">Github</a><br/>
 
 </p>
 
             <div class="row capture_detail_parent" style="margin-bottom: 50px; ">
             <div class="col-sm-4 col-sm-offset-4">
                 <div class="capture_detail">
-                   <p id="definition">Index page</p> 
+                   <p id="definition">Start page</p> 
                 </div>
             </div>
         </div>
@@ -183,24 +146,18 @@ With this application, the user can:<br/>
 
     <script type="text/javascript">
         $(document).ready(function () {
-            for (var i = 1; i <= 9; i++) {
-                $(".slides").append("<li><img src=\"../img/didon/slide"+i+".jpg\"/></li>");
-            }
+                $(".slides").append("<li><img src=\"img/memory_game/slide"+2+".png\"/></li>");
+                $(".slides").append("<li><img src=\"img/memory_game/slide"+1+".png\"/></li>");
+                $(".slides").append("<li><img src=\"img/memory_game/slide"+3+".png\"/></li>");
+            
 
             sr.reveal( "#definition", { reset: true, scale:1.2 } );
 
 
             var map = new Map();
             map.set(0,"Start page");
-            map.set(1,"Index page");
-            map.set(2,"Login page");
-            map.set(3,"Registration page");
-            map.set(4,"Main page");
-            map.set(5,"About page");
-            map.set(6,"Contest description");
-            map.set(7,"Didon's description");
-            map.set(8,"Contest rules");
-
+            map.set(1,"Game page");
+            map.set(2,"End page");
             
  
               $('#slider').flexslider({
