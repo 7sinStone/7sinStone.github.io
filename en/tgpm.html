@@ -34,13 +34,13 @@
     <style>
 
         #slider {
-            width: 500px;
-            height: 500px;
+            width: 1000px;
+            height: 550px;
         }
 
         #slider .slides img {
-            width: 500px;
-            height: 500px;
+            width: 1000px;
+            height: 550px;
         }
 
     </style>
@@ -51,7 +51,8 @@
         var config = {
           viewFactor : 0.15,
           duration   : 800,
-          distance   : "0px"
+          distance   : "0px",
+          mobile : false
         };
 
         window.sr = ScrollReveal( config );
@@ -63,13 +64,13 @@
 <body id="page-top" class="index">
 
 
-    <a class="btn btn-back" href="index.html"> <span class="fa fa-arrow-left" id="arrow"></span></a>
+    <a class="btn btn-back" href="index.html"> <span class="fa fa-reply" id="arrow"></span></a>
 
     <section id="portfolio" style="background-color: #f1f1f1">
         
     <div class="container">
 
-        <div class="row">
+        <div class="row title">
             <h2 class="">Traffic Generation and Performance measurement</h2>
         </div>
 
@@ -95,32 +96,33 @@
 
         <div class="row">
             <h3><i class="fa fa-list-alt"></i> Description</h3>
-            <p> It is a module integrated into the "Shinken" monitoring tool that allows the generation of network traffic and performance measurement based on open source tools: IPERF3 and D-ITG.<br/>
-For this the overall architecture of the project must contain:<br/>
-- A module integrated in Shiken which must be installed side supervisor machine. It orchestrates the whole process of the performance test. <br/>Through it, we define the machines that will generate traffic and the machines that will be the receivers, and for each flow to generate, we define the different parameters:<br/>
-- protocol: specifies the protocol used by the sending machine when generating
+            <p class="text-justify"> It is a module integrated into the "Shinken" monitoring tool that allows the generation of network traffic and performance measurement based on open source tools: <a href="https://iperf.fr/">IPERF3</a> and <a href="http://www.grid.unina.it/software/ITG/">D-ITG</a>.<br/><br/>
+For this the overall architecture of the project contains:<br/>
+<i class="fa fa-chevron-circle-right"></i> A module integrated in Shiken which must be installed side supervisor machine. It orchestrates the whole process of the performance test. <br/>Through it, we define the machines that will generate traffic and the machines that will be the receivers, and for each flow to generate, we define the different parameters:<br/>
+<p style="margin-left: 20px">
+<i class="fa fa-chevron-right"></i> <span class="parameters">protocol</span>: specifies the protocol used by the sending machine when generating
 traffic. The protocol can be either TCP or UDP. In the case of TCP, traffic flows are
 Unicast, whereas for UDP, the administrator must be able to choose between multicast and unicast,<br/>
-- packet size: the size of the packets can be fixed, as it can follow a model
-Specific stochastic,<br/>
-Inter-frame time: the time delay between the arrival of two successive frames may,<br/>
-As in the case of packet size, be either constant or defined by a stochastic model,<br/>
-- sampling interval: delay between two successive measurements of a metric,<br/>
-- transmission time: duration of traffic generation,<br/>
-- transmission time: duration of traffic generation,<br/>
-- delay before the start of the traffic generation: allows to calculate the date of the beginning of the generation of a given stream.<br/>
-- A daemon that can act as a generator or a traffic receiver. This daemon must be installed on the supervised machine side.<br/>
- 
+<i class="fa fa-chevron-right"></i> <span class="parameters">packet size</span>: the size of the packets can be fixed, as it can follow a model specific stochastic,<br/>
+<i class="fa fa-chevron-right"></i> <span class="parameters">Inter-frame time</span>: the time delay between the arrival of two successive frames may.As in the case of packet size, be either constant or defined by a stochastic model,<br/>
+<i class="fa fa-chevron-right"></i> <span class="parameters">sampling interval</span>: delay between two successive measurements of a metric,<br/>
+<i class="fa fa-chevron-right"></i> <span class="parameters">transmission time</span>: duration of traffic generation,<br/>
+<i class="fa fa-chevron-right"></i> <span class="parameters">transmission time</span>: duration of traffic generation,<br/>
+<i class="fa fa-chevron-right"></i> <span class="parameters">delay before the start of the traffic generation</span>: allows to calculate the date of the beginning of the generation of a given stream.</p>
+<p>
+<i class="fa fa-chevron-circle-right"></i> A daemon that can act as a generator or a traffic receiver. This daemon must be installed on the supervised machine side.<br/>
+ <br/>
+The project's features:<br/>
 
-Features:<br/>
-The extensions to be developed must provide the administrator with the following features:<br/>
-
-- Configuration of the flows to be generated<br/>
-- Traffic Generation<br/>
-- Graphical representation of the results obtained by representing each metric represented separately.<br/>
-
+<i class="fa fa-check-square-o"></i> Configuration of the flows to be generated<br/>
+<i class="fa fa-check-square-o"></i> Traffic Generation<br/>
+<i class="fa fa-check-square-o"></i> Graphical representation of the results obtained by representing each metric represented separately.<br/>
 
 </p>
+</p>
+<br/>
+<p><span class="parameters"><i class="fa fa-tag"></i> Keywords:</span> <span class="keywords">traffic generation, Shinken, Iperf3, D-ITG
+Python, RPC, Pyro4, Flask, web socket</span></p>
         </div>
         
     </div>
