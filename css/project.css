@@ -29,7 +29,9 @@ a{
   color: white;
 }
 
-
+.project_title{
+  font-size: 3em;
+}
 .btn-back:before {
   background:#8CBAFA;
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#8CBAFA), to(#8CBAFA));
@@ -81,7 +83,7 @@ text-align: center;
 
 
 @media all and (max-width: 768px) {
-  h2{
+  h2,.project_title{
     font-size: 1.8em;
     text-align: center;
     margin-bottom: 10px;
